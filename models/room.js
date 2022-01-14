@@ -6,6 +6,12 @@ const roomSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
+    currentbookings: [],
+    imageurls: [],
     maxcount: {
         type: Number,
         required: true
@@ -18,18 +24,10 @@ const roomSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    imageurls: [],
-    currentbookings: [],
     type: {
         type: String,
         required: true
     },
-    description: {
-        type: String,
-        required: true
-    }
-}, {
-    timestamps: true
 });
 
 const roomModel = mongoose.model('rooms', roomSchema);
