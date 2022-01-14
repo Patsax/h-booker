@@ -3,7 +3,7 @@ const path = require('path');
 const db = require('./db');
 
 const roomsRoute = require('./routes/roomsRoute');
-const userRoute = require('./routes/userRoute');
+const userRoute = require('./routes/bookingsRoute');
 const bookingsRoute=require('./routes/bookingsRoute');
 
 const app = express();
