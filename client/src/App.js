@@ -2,14 +2,14 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'antd/dist/antd.css';
 
-import Homescreen from "./screens/Homescreen";
+import Homescreen from "./pages/Homescreen";
 import Navbar from "./components/Navbar";
-import Loginscreen from "./screens/Loginscreen";
-import Registerscreen from "./screens/Registerscreen";
-import Bookingscreen from "./screens/Bookingscreen";
-import Profilescreen from "./screens/Profilescreen";
-import Landingscreen from "./screens/Landingscreen";
-import Adminscreen from "./screens/Adminscreen";
+import Loginscreen from "./pages/Loginscreen";
+import Registerscreen from "./pages/Registerscreen";
+import Bookingscreen from "./pages/Bookingscreen";
+import Profilescreen from "./pages/Profilescreen";
+import Landingscreen from "./pages/Landingscreen";
+import Adminscreen from "./pages/Adminscreen";
 
 function App() {
   return (
