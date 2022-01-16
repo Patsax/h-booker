@@ -5,6 +5,7 @@ import Error from "../components/Error";
 import Loader from "../components/Loader";
 import Success from '../components/Success'
 import StripeCheckout from 'react-stripe-checkout'
+import { useParams } from 'react-router-dom'
 
 import moment from "moment"
 import AOS from 'aos';
@@ -13,17 +14,21 @@ import 'aos/dist/aos.css';
 AOS.init();
 AOS.refresh()
 
-function Bookingscreen({match}) {
-    const[loading, setloading]=useState(true);
-    const[error, seterror]=useState(false)
-    const[success, setsuccess]=useState(false)   
-    const[room , setroom]=useState()
-    const roomid=match.params.roomid
-    const fromdate=moment(match.params.fromdate , 'DD-MM-YYYY')
-    const todate=moment(match.params.todate,'DD-MM-YYYY')
+function Bookingscreen() {
+    const params = useParams()
+    console.log(params)
+    const[loading, setloading] = useState(true);
+    const[error, seterror] = useState(false)
+    const[success, setsuccess] = useState(false)   
+    const[room , setroom] = useState()
+    
+    const roomid = params.roomid
+    const fromdate = moment(params.fromdate , 'DD-MM-YYYY')
+    const todate = moment(params.todate,'DD-MM-YYYY')
     const totalDays = moment.duration(todate.diff(fromdate)).asDays()+1
-    const [totalAmount , settotalAmount]=useState()
 
+    const [totalAmount , settotalAmount] = useState()
+    
     useEffect(async() => {
         try {
             setloading(true);
@@ -89,8 +94,8 @@ function Bookingscreen({match}) {
                             <hr />
 
                             <p><b>Name</b> : {JSON.parse(localStorage.getItem('currentUser')).name}</p>
-                            <p><b>From Date</b> : {match.params.fromdate}</p>
-                            <p><b>To Date</b> : {match.params.todate}</p>
+                            <p><b>From Date</b> : {params.fromdate}</p>
+                            <p><b>To Date</b> : {params.todate}</p>
                             <p><b>Max Count </b>: {room.maxcount}</p>
                         </div>
 

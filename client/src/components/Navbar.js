@@ -24,25 +24,25 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mr-auto">
                         {localStorage.getItem('currentUser') ? (
-                            <div class="dropdown mr-5">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-user" aria-hidden="true"></i>  {JSON.parse(localStorage.getItem('currentUser')).name} 
+                            <div className="dropdown mr-5">
+                                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i className="fa fa-user" aria-hidden="true"></i>  {JSON.parse(localStorage.getItem('currentUser')).name} 
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="/profile">Profile</a>
-                                    <a class="dropdown-item" href="#" onClick={logout}>Logout</a>
+                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a className="dropdown-item" href="/profile">Profile</a>
+                                    <a className="dropdown-item" href="#" onClick={logout}>Logout</a>
                                 </div>
                             </div>
 
                         ) : (
                             <>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/register">
+                                <li className="nav-item active">
+                                    <a className="nav-link" href="/register">
                                         Register
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/login">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/login">
                                         Login
                                     </a>
                                 </li>
