@@ -37,9 +37,21 @@ npm start
 ```
 nodemon server
 ```
+
+
+### Screenshot
+<img width="1995" alt="Screen Shot 2022-01-18 at 9 43 09 PM" src="https://user-images.githubusercontent.com/29662632/150060584-92ab239e-ebe7-496e-84ec-7bb72adc416a.png">
+
+![Screen Shot 2022-01-18 at 9 49 37 PM](https://user-images.githubusercontent.com/29662632/150060649-d8e7a682-b8a4-4ccd-be25-650fb189bbff.png)
+
+![Screen Shot 2022-01-18 at 9 50 20 PM](https://user-images.githubusercontent.com/29662632/150060713-b5d86df3-e3d9-4c04-b77b-a6836a6e9d6f.png)
+
+
+
+### Video Walkthrough
 https://watch.screencastify.com/v/m8SZhCV9DffHpPTn8ylm
 
-![ScreenShot]
+
 
 ### Deployed URL
 https://h-booker.herokuapp.com/
