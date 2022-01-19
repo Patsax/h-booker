@@ -2,7 +2,7 @@
 
 
 ## Description
-Booking a hotel can be frustrating in these modern times. Comparing prices, considering add-on services, and navigating through cluttered UIs can be frustrating when trying to find a place to rest for the night. While creating this application, our goal was to create something that solved the primary needs of the user and offered a simple, low stress option for selecting a room, with no fluff, no ads to close or minimize, and simple, functional design. 
+Booking a hotel can be frustrating in these modern times. Comparing prices, considering add-on services, and navigating through cluttered UIs can be time consuming when trying to find a place to rest for the night. While creating this application, our goal was to create something that solved the primary needs of the user and offered a simple, low stress option for selecting a room, with no fluff, no ads to close or minimize, and simple, functional design. 
 
 ## Concept
 
