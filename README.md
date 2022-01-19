@@ -16,7 +16,8 @@ Booking a hotel can be frustrating in these modern times. Comparing prices, cons
  
 ![download](https://user-images.githubusercontent.com/29662632/150061774-638b5c01-040c-4037-9064-28f6878c3eea.png)
 
-![kusb9stg1ndrp7j53-MongoDBLogoBrand1](https://user-images.githubusercontent.com/29662632/150061929-5d2f8581-26cf-40b9-a56a-45a5d981faca.png)
+![image](https://user-images.githubusercontent.com/29662632/150063211-f451b22b-6d7a-4aae-89f0-677f0324f554.png)
+
 
 ![image](https://user-images.githubusercontent.com/29662632/150062889-97ad40c4-11d2-4d17-bcc0-fdfff4264677.png)
 
