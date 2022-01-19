@@ -50,7 +50,7 @@ export default function Loginscreen() {
 
                     {loading && (<Loader/>)} 
                     {error && (<Error error='Invalid Credentials'/>)}
-                    {success && (<Success success='User Login Successfull'/>)}
+                    {success && (<Success success='User Login Successful'/>)}
                     <div>
                         <input required type="text" placeholder="email" className="form-control mt-1" value={email} onChange={(e)=>{setemail(e.target.value)}} />
                         <input

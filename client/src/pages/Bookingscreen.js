@@ -23,8 +23,8 @@ function Bookingscreen() {
   const [room, setroom] = useState();
 
   const roomid = params.roomid;
-  const fromdate = moment(params.fromdate, "DD-MM-YYYY");
-  const todate = moment(params.todate, "DD-MM-YYYY");
+  const fromdate = moment(params.fromdate, "MM-DD-YYYY");
+  const todate = moment(params.todate, "MM-DD-YYYY");
   const totalDays = moment.duration(todate.diff(fromdate)).asDays() + 1;
 
   const [totalAmount, settotalAmount] = useState();
@@ -45,7 +45,7 @@ function Bookingscreen() {
     }
   }, []);
 
-  async function tokenHander(token) {
+  async function tokenHandler(token) {
     console.log(token);
     const bookingDetails = {
       token,
@@ -63,7 +63,7 @@ function Bookingscreen() {
       setloading(false);
       Swal.fire(
         "Congrats",
-        "Your Room has booked succeessfully",
+        "Your Room has booked successfully",
         "success"
       ).then((result) => {
         window.location.href = "/profile";
@@ -130,7 +130,7 @@ function Bookingscreen() {
               <StripeCheckout
                 amount={totalAmount * 100}
                 shippingAddress
-                token={tokenHander}
+                token={tokenHandler}
                 stripeKey="pk_test_51IYnC0SIR2AbPxU0TMStZwFUoaDZle9yXVygpVIzg36LdpO8aSG8B9j2C0AikiQw2YyCI8n4faFYQI5uG3Nk5EGQ00lCfjXYvZ"
                 currency="USD"
               >

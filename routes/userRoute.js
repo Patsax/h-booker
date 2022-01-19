@@ -41,7 +41,7 @@ router.post("/login", async(req, res) => {
         }
 
     } catch (error) {
-        return res.status(400).json({ message: 'Something went weong' });
+        return res.status(400).json({ message: 'Something went wrong' });
     }
 
 });

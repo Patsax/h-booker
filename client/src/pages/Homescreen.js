@@ -15,7 +15,7 @@ const { RangePicker } = DatePicker;
 
 function Homescreen() {
     const [hotels, sethotels] = useState([]);
-    const [duplicatehotes, setduplicatehotes] = useState([]);
+    const [duplicatehotels, setduplicatehotels] = useState([]);
     const [fromdate, setfromdate] = useState('');
     const [todate, settodate] = useState('')
     const [loading, setloading] = useState(false);
@@ -23,25 +23,25 @@ function Homescreen() {
     const [type , settype]=useState('all')
 
     function filterByDate(dates) {
-        setfromdate(moment(dates[0]).format('DD-MM-YYYY'))
-        settodate(moment(dates[1]).format('DD-MM-YYYY'))
+        setfromdate(moment(dates[0]).format('MM-DD-YYYY'))
+        settodate(moment(dates[1]).format('MM-DD-YYYY'))
         
         var temp=[]
-        for (var room of duplicatehotes) {
+        for (var room of duplicatehotels) {
             var availability = false;
 
             for (var booking of room.currentbookings) {
                 
                 if(room.currentbookings.length) {
                     if (
-                        !moment(moment(dates[0]).format('DD-MM-YYYY')).isBetween(booking.fromdate, booking.todate) &&
-                        !moment(moment(dates[1]).format('DD-MM-YYYY')).isBetween(booking.fromdate, booking.todate)
+                        !moment(moment(dates[0]).format('MM-DD-YYYY')).isBetween(booking.fromdate, booking.todate) &&
+                        !moment(moment(dates[1]).format('MM-DD-YYYY')).isBetween(booking.fromdate, booking.todate)
                     ) {
                         if (
-                            moment(dates[0]).format('DD-MM-YYYY') !== booking.fromdate &&
-                            moment(dates[0]).format('DD-MM-YYYY') !== booking.todate &&
-                            moment(dates[1]).format('DD-MM-YYYY') !== booking.fromdate &&
-                            moment(dates[1]).format('DD-MM-YYYY') !== booking.todate
+                            moment(dates[0]).format('MM-DD-YYYY') !== booking.fromdate &&
+                            moment(dates[0]).format('MM-DD-YYYY') !== booking.todate &&
+                            moment(dates[1]).format('MM-DD-YYYY') !== booking.fromdate &&
+                            moment(dates[1]).format('MM-DD-YYYY') !== booking.todate
                         ) {
                             availability = true;
                         }
@@ -64,7 +64,7 @@ function Homescreen() {
             const rooms = await (await axios.get("/api/rooms/getallrooms")).data;
             console.log(rooms);
             sethotels(rooms);
-            setduplicatehotes(rooms)
+            setduplicatehotels(rooms)
             setloading(false);
 
         } catch (error) {
@@ -74,17 +74,17 @@ function Homescreen() {
     }, []);
 
     function filterBySearch() {
-        const dupdate = duplicatehotes.filter(room=>room.name.toLowerCase().includes(searchkey))
+        const dupdate = duplicatehotels.filter(room=>room.name.toLowerCase().includes(searchkey))
         sethotels(dupdate)
     }
 
     function filterByType(e) {
         settype(e)
         if(e!=='all'){
-            const dupdate = duplicatehotes.filter(room=>room.type.toLowerCase().includes(e.toLowerCase()))
+            const dupdate = duplicatehotels.filter(room=>room.type.toLowerCase().includes(e.toLowerCase()))
             sethotels(dupdate)
         } else {
-            sethotels(duplicatehotes)
+            sethotels(duplicatehotels)
         }
     }
 
@@ -93,7 +93,7 @@ function Homescreen() {
             <div className="container">
                 <div className="row bs p-3 m-5">
                     <div className="col-md-4">
-                        <RangePicker style={{ height: "38px" }} onChange={filterByDate} format='DD-MM-YYYY' className='m-2'/>
+                        <RangePicker style={{ height: "38px" }} onChange={filterByDate} format='MM-DD-YYYY' className='m-2'/>
                     </div>
 
                     <div className="col-md-4">

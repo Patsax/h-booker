@@ -16,7 +16,7 @@ export default function Registerscreen() {
 
     async function register(){
         if(password!=cpassword) {
-            alert("passwords not matched")
+            alert("passwords do not match")
         } else {
             const user={
                 name,
@@ -49,7 +49,7 @@ export default function Registerscreen() {
 
                     {loading && (<Loader/>)}
                     {success && (<Success success='User Registered Successfully' />)}
-                    {error && (<Error error='Email already registred' />)}
+                    {error && (<Error error='Email already registered' />)}
 
                     <h2 className="text-center m-2" style={{ fontSize: "35px" }}>
                         Register
