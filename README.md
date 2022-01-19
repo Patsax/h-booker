@@ -13,15 +13,27 @@ Booking a hotel can be frustrating in these modern times. Comparing prices, cons
 
 
 ### Dependencies
+ 
+![download](https://user-images.githubusercontent.com/29662632/150061774-638b5c01-040c-4037-9064-28f6878c3eea.png)
 
-* Express
-* MongoDB
-* Mongoose
-* NodeJS
-* Axios
-* Moment
-* Stripe
-* JSX
+![kusb9stg1ndrp7j53-MongoDBLogoBrand1](https://user-images.githubusercontent.com/29662632/150061929-5d2f8581-26cf-40b9-a56a-45a5d981faca.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062889-97ad40c4-11d2-4d17-bcc0-fdfff4264677.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062164-6a04403a-f8eb-43d4-a6bd-70689502b85b.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062259-e769690d-b289-45a3-8c60-b6f4ab8d26a3.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062351-19def225-3981-4e82-86ac-bbdf3a2a004d.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062576-6e5f2432-480e-499e-83ec-a0449625a045.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062601-019987ad-0abc-43da-9c67-2a7b89e1604b.png)
+
+![image](https://user-images.githubusercontent.com/29662632/150062795-52da8136-6073-4196-a43c-6ed06c600533.png)
+
+
+
 
 
 ### Executing program
