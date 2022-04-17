@@ -14,7 +14,7 @@ function Landingscreen() {
             <div className="landing row justify-content-center text-center">
                 <div className="col-md-9 my-auto" style={{borderRight:'0px solid white'}}>
                     <h2 style={{ color: "white", fontSize: "130px" }} data-aos='zoom-in'>H-Booker</h2>
-                    <h1 style={{ color: "white"}} data-aos='zoom-out' >“There is only one boss. The Guest.</h1>
+                    <h1 style={{ color: "white"}} data-aos='zoom-out' >“There is only one boss. The Guest".</h1>
                     <Link to="/home">
                         <button className='btn btn-primary'>Get Started</button>
                     </Link>
